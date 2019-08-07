@@ -7,8 +7,8 @@ var batterySub;
 function initROS() {
 
     ros = new ROSLIB.Ros({
-        //url: "ws://" + robot_hostname + ":9090"
-        url: "ws://192.168.4.163:9090"
+        url: "ws://" + robot_hostname + ":9090"
+    
     });
 
     relay1Pub = new ROSLIB.Topic({
